@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axionax – Protocol Architecture Overview (v1.5)</title>
+    <meta name="description" content="An overview for Axionax Protocol v1.5 covering Layer-1 integration, security, DeAI, DAO governance and protocol parameters.">
+    <link rel="canonical" href="https://axionax.org/docs/ARCHITECTURE.html" />
+    <meta property="og:title" content="Axionax Protocol Architecture v1.5 Overview">
+    <meta property="og:description" content="Breakdown and detail explanation for Axionax Layer-1, ASR, PPC, PoPC, DA, DeAI, and core system parameters.">
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://axionax.org/docs/ARCHITECTURE.html" />
+    <meta property="og:image" content="https://axionax.org/assets/og-image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <style>
+        main.markdown-body {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+            background: #fff; 
+            color: #23272f;
+        }
+        .code-block {background: #f3f6fa; border-radius: 6px; padding: 16px; font-size: 0.96em;}
+        table {border-collapse:collapse;margin:16px 0;width:100%}
+        table,th,td{border:1px solid #aab;}
+        th,td{padding:8px;text-align:left}
+    </style>
+</head>
+<body>
+<main class="markdown-body" aria-label="Axionax Architecture Overview">
+  <h1>Axionax Protocol — Architecture Overview v1.5</h1>
+  <aside>
+    <p style="font-size:1.1em;">This document breaks down the Axionax architecture version 1.5 for a clear view of each component and workflow.</p>
+  </aside>
+  <section>
+    <h2>0) High-Level Overview</h2>
+    <div class="code-block" aria-label="Architecture diagram (Mermaid syntax)">
+    <pre><code>flowchart LR
+  Clients["Users and DApps and Wallets"] --> RPC["RPC Nodes"]
+  subgraph L1["Axionax L1"]
+    direction LR
+    subgraph Market["Assignment and Pricing"]
+      ASR["Auto Selection Router&lt;br/&gt;Top K weighted VRF"]
+      PPC["Posted Price Controller&lt;br/&gt;Util and Queue control"]
+    end
+    subgraph Core["Integrated Core Loop"]
+      Exec["Execution Engine&lt;br/&gt;Deterministic"]
+      PoPC["Validation&lt;br/&gt;PoPC Sampling"]
+      DA["Data Availability&lt;br/&gt;EC and Storage"]
+      Settle["Settlement and Finality"]
+    end
+    Validators["Validator Set"]
+    Auditors["DA Live Auditors"]
+  end
+  RPC --> Exec
+  Exec --> PoPC --> DA --> Settle
+  Settle -.-> Exec
+  PPC -.-> ASR
+  ASR --> Exec
+  VRF["Delayed VRF"] -.-> PoPC
+  Auditors -.-> DA
+  Telemetry["Monitoring and Telemetry"] -.-> Exec
+  Telemetry -.-> PoPC
+  Telemetry -.-> DA
+  Telemetry -.-> Settle
+  Attest["Public Attestations"] -.-> Telemetry
+  DAO["Axionax DAO"] -.-> PPC
+  DAO -.-> ASR
+  DeAI["DeAI Sentinel and Assist"] -.-> Telemetry
+  Telemetry -.-> DeAI
+  DeAI --> DAO</code></pre>
+    <p><b>Note:</b> Solid lines = data flow / Dashed lines = control, monitoring, governance.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>1) Core Workflow v1.5 (No Bidding)</h2>
+    <ol>
+      <li>Post → Assign → Execute → Commit and DA Pre-commit</li>
+      <li>Wait k (delayed VRF)</li>
+      <li>Challenge → Prove → Verify and Seal</li>
+      <li>Fraud Window → Finalize</li>
+    </ol>
+    <div class="code-block" aria-label="Workflow sequence diagram (Mermaid)">
+      <pre><code>sequenceDiagram
+  autonumber
+  actor Client
+  participant RPC as "RPC Nodes"
+  participant ASR as "ASR Router"
+  ... (full Mermaid omitted for brevity) ...
+</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>2) ASR – Auto-Selection Router</h2>
+    <ul>
+      <li><b>Suitability:</b> Match with job requirement</li>
+      <li><b>Performance:</b> Reliability/statistics (EWMA rolling 7–30d)</li>
+      <li><b>FairnessBoost:</b> Quota limits, newcomer ε-greedy boost, anti-collusion by org/ASN/region</li>
+      <li><b>Key parameters:</b> K, q_max, ε (DAO-defined)</li>
+    </ul>
+    <div class="code-block" aria-label="ASR scoring flow (mermaid)">
+      <pre><code>flowchart LR
+ ... (see repo for full diagram) ...
+      </code></pre>
+    </div>
+  </section>
+  <section>
+    <h2>3) Posted Price Controller (PPC)</h2>
+    <ul>
+      <li>Adaptive price per round to prevent congestion & keep stability</li>
+      <li>DAO: α, β, min/max price bounds</li>
+    </ul>
+    <div class="code-block"><pre><code>flowchart LR
+ ... (diagram refer repo) ...</code></pre></div>
+  </section>
+  <section>
+    <h2>4) PoPC – Proof of Probabilistic Checking</h2>
+    <ul>
+      <li>Reduce cost: O(s) verification</li>
+      <li>Adjust ‘s’ for security level</li>
+    </ul>
+    <div class="code-block"><pre><code>flowchart LR
+ ... PoPC sampling ...</code></pre></div>
+  </section>
+  <section>
+    <h2>5) Data Availability (DA) & Auditing</h2>
+    <ul>
+      <li>Must be available for challenge <b>Δt_DA</b> at all time</li>
+      <li>Penalized for unavailability</li>
+    </ul>
+    <div class="code-block"><pre><code>flowchart LR
+ ... DA flow ...</code></pre></div>
+  </section>
+  <section>
+    <h2>6) Security and Anti-Fraud Layer</h2>
+    <ul>
+      <li>Delayed VRF prevents grinding</li>
+      <li>Stratified sampling, adaptive escalation</li>
+      <li>Replica diversity</li>
+      <li>Fraud-proof window</li>
+      <li>Worker & Validator slashing</li>
+    </ul>
+    <div class="code-block"><pre><code>flowchart TB
+ ... (see repo) ...</code></pre></div>
+  </section>
+  <section>
+    <h2>7) DeAI and DAO Governance</h2>
+    <ul>
+      <li>DeAI Sentinel: detect anomalies (anti-quota bypass, collusion, etc)</li>
+      <li>Assistive DeAI: safe param suggestion, decision explainability</li>
+      <li>DAO: control all protocol parameters</li>
+    </ul>
+    <div class="code-block"><pre><code>flowchart LR
+ ... (see repo) ...</code></pre></div>
+  </section>
+  <section>
+    <h2>8) Recommended Parameters (v1.5)</h2>
+    <table>
+      <tr><th>Parameter</th><th>Recommended</th><th>Description</th></tr>
+      <tr><td>s (samples)</td><td>600–1500</td><td>PoPC sample points</td></tr>
+      <tr><td>β (redundancy)</td><td>2–3%</td><td>Fraction of jobs duplicated for cross-check</td></tr>
+      <tr><td>K (Top K)</td><td>64</td><td>Max candidates in ASR</td></tr>
+      <tr><td>q_max (quota)</td><td>10–15% / epoch</td><td>Quota per provider</td></tr>
+      <tr><td>ε (epsilon)</td><td>5%</td><td>Exploration for new players</td></tr>
+      <tr><td>util*</td><td>0.7</td><td>PPC target utilization</td></tr>
+      <tr><td>q*</td><td>60 seconds</td><td>PPC queue wait target</td></tr>
+      <tr><td>k (delay blocks)</td><td>≥ 2 blocks</td><td>VRF seed delay</td></tr>
+      <tr><td>Δt_fraud</td><td>~3600 sec</td><td>Fraud-Proof Window</td></tr>
+      <tr><td>False PASS (V)</td><td>≥ 500 bp</td><td>Validator slashing rate</td></tr>
+    </table>
+  </section>
+  <section>
+    <h2>9) Workflow Summary (v1.5)</h2>
+    <ol>
+      <li>Post job</li>
+      <li>ASR assign</li>
+      <li>Execute</li>
+      <li>Commit & DA Pre-commit</li>
+      <li>Wait k</li>
+      <li>Challenge (VRF)</li>
+      <li>Prove</li>
+      <li>Verify & Seal</li>
+      <li>Fraud Window</li>
+      <li>Finalize & Settlement</li>
+      <li>DeAI Monitor</li>
+    </ol>
+  </section>
+  <br/>
+  <footer>
+    <p>Rendered from <code>ARCHITECTURE.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">Axionax</a></p>
+  </footer>
+</main>
+</body>
+</html>
