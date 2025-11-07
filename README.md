@@ -6,6 +6,29 @@ for high-performance decentralized compute markets.
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.0-red)](https://jekyllrb.com/)
+[![Status](https://img.shields.io/badge/Status-Active-green)](https://docs.axionax.org)
+
+---
+
+## 📢 Latest Update (November 2025)
+
+🎯 **Documentation Completion for Public Testnet Launch!**
+
+Current documentation efforts:
+
+✅ **Documentation Types in Progress:**
+- 📘 **API Documentation** - OpenAPI/Swagger specs, examples, rate limits
+- 📖 **User Documentation** - Getting started, tutorials, FAQ, troubleshooting
+- 👨‍💻 **Developer Documentation** - Architecture, setup, contributing guidelines
+- 🔗 **Integration Guides** - Migration guides, RPC usage, node deployment
+
+🔥 **Active Work:**
+- API reference completion
+- Code examples validation
+- Link checking and fixing
+- Tutorial video planning (optional)
+
+📦 **Documentation Status:** 90%+ complete, final review phase
 
 ---
 
@@ -18,17 +41,20 @@ AxionAX Protocol, including architecture, API references, guides, and tutorials.
 
 Documentation for the entire AxionAX Protocol:
 
-- **Protocol Core**: [`../core`](../core) - Blockchain implementation
-- **SDK**: [`../sdk`](../sdk) - Developer toolkit
-- **Web Interface**: [`../web`](../web) - Official website
-- **Marketplace**: [`../marketplace`](../marketplace) - Compute marketplace
-- **DevTools**: [`../devtools`](../devtools) - Development tools
-- **Deploy**: [`../deploy`](../deploy) - Infrastructure deployment
+- **Protocol Core**: [`../axionax-core`](../axionax-core) - Blockchain implementation
+- **SDK**: [`../axionax-sdk-ts`](../axionax-sdk-ts) - Developer toolkit
+- **Web Interface**: [`../axionax-web`](../axionax-web) - Official website
+- **Marketplace**: [`../axionax-marketplace`](../axionax-marketplace) - Compute marketplace
+- **DevTools**: [`../axionax-devtools`](../axionax-devtools) - Development tools
+- **Deploy**: [`../axionax-deploy`](../axionax-deploy) - Infrastructure deployment
+- **Issue Manager**: [`../issue-manager`](../issue-manager) - Task tracking
 
 **Main Repository**:
 [axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
 
 **Live Site**: [docs.axionax.org](https://docs.axionax.org)
+
+**Pre-Testnet Status:** Documentation 90%+ complete, active updates ongoing
 
 ---
 
@@ -39,7 +65,7 @@ Documentation for the entire AxionAX Protocol:
 - **`ARCHITECTURE.md`** - AxionAX Protocol system design
 - **`QUICKSTART.md`** - Quick start guide
 - **`GETTING_STARTED.md`** - Detailed setup instructions
-- **`API_REFERENCE.md`** - Complete API documentation
+- **`API_REFERENCE.md`** - Complete API documentation (📝 Active)
 - **`STATE_RPC_USAGE.md`** - RPC usage guide
 
 ### Protocol Specifications
@@ -53,17 +79,24 @@ Documentation for the entire AxionAX Protocol:
 ### Guides & Tutorials
 
 - **`BUILD.md`** - Building from source
-- **`TESTING_GUIDE.md`** - Testing strategies
+- **`TESTING_GUIDE.md`** - Testing strategies (📝 Active)
 - **`CONTRIBUTING.md`** - Contribution guidelines
 - **`INTEGRATION_MIGRATION_GUIDE.md`** - Integration guide
-- **`RPC_NODE_DEPLOYMENT.md`** - Node deployment
+- **`RPC_NODE_DEPLOYMENT.md`** - Node deployment (📝 Active)
 - **`VPS_VALIDATOR_SETUP.md`** - Validator setup
 
-### Project Status
+### Project Status & Launch Info
 
 - **`PROJECT_COMPLETION.md`** - v1.6 completion status
 - **`STATUS.md`** - Current development status
-- **`TESTNET_LAUNCH.md`** - Testnet launch information
+- **`TESTNET_LAUNCH.md`** - Testnet launch information (🔥 New!)
+- **`TESTNET_LAUNCH_CHECKLIST.md`** - Pre-launch checklist (🔥 New!)
+
+### Community & Support
+
+- **`FAQ.md`** - Frequently asked questions (📝 Active)
+- **`TROUBLESHOOTING.md`** - Common issues & solutions (📝 Active)
+- **`NETWORK_INFO.md`** - Chain ID, RPC endpoints, contract addresses (🔥 New!)
 
 ### Jekyll Theme
 
@@ -72,6 +105,25 @@ Documentation for the entire AxionAX Protocol:
 - **`assets/`** - Static assets (CSS, JS, images)
 - **`_config.yml`** - Jekyll configuration
 - **`CNAME`** - Custom domain (docs.axionax.org)
+
+---
+
+## 🎯 Pre-Testnet Documentation Checklist
+
+Track completion status:
+
+- [x] ✅ Architecture & System Design
+- [x] ✅ Quick Start & Getting Started
+- [x] ✅ Security Documentation
+- [x] ✅ Tokenomics & Governance
+- [ ] 📝 API Reference (90% - examples in progress)
+- [ ] 📝 RPC Usage Guide (updating endpoints)
+- [ ] 📝 Testing Guide (finalizing)
+- [ ] 📝 FAQ & Troubleshooting (active)
+- [ ] 🔥 Network Information (new!)
+- [ ] 🔥 Testnet Launch Checklist (new!)
+
+Use [`../issue-manager`](../issue-manager) to track documentation tasks.
 
 ---
 
@@ -123,11 +175,13 @@ bundle exec jekyll build
 ### Documentation Guidelines
 
 - ✅ Use clear, concise language
-- ✅ Include code examples
-- ✅ Add diagrams where helpful
-- ✅ Link to related docs
+- ✅ Include code examples with expected outputs
+- ✅ Add diagrams where helpful (Mermaid supported)
+- ✅ Link to related docs (internal navigation)
 - ✅ Keep AxionAX Protocol focus
 - ✅ Update table of contents
+- ✅ Test all code examples
+- ✅ Validate external links (use `check-links.sh` from devtools)
 
 ### Example Front Matter
 
@@ -170,15 +224,16 @@ CNAME docs -> axionaxprotocol.github.io
 
 ## 🔗 AxionAX Protocol Ecosystem
 
-| Component       | Description               | Location                           |
-| --------------- | ------------------------- | ---------------------------------- |
-| **Docs** (this) | Protocol documentation    | `docs/`                            |
-| **Core**        | Blockchain implementation | [`../core`](../core)               |
-| **Web**         | Web interface             | [`../web`](../web)                 |
-| **SDK**         | TypeScript SDK            | [`../sdk`](../sdk)                 |
-| **Marketplace** | Compute marketplace       | [`../marketplace`](../marketplace) |
-| **DevTools**    | Development tools         | [`../devtools`](../devtools)       |
-| **Deploy**      | Infrastructure            | [`../deploy`](../deploy)           |
+| Component           | Description               | Location                                         | Status     |
+| ------------------- | ------------------------- | ------------------------------------------------ | ---------- |
+| **Docs** (this)     | Protocol documentation    | `axionax-docs/`                                  | 📝 Active  |
+| **Core**            | Blockchain implementation | [`../axionax-core`](../axionax-core)             | ✅ Ready   |
+| **Web**             | Web interface             | [`../axionax-web`](../axionax-web)               | ✅ Ready   |
+| **SDK**             | TypeScript SDK            | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ✅ Ready   |
+| **Marketplace**     | Compute marketplace       | [`../axionax-marketplace`](../axionax-marketplace) | 🚧 Beta  |
+| **DevTools**        | Development tools         | [`../axionax-devtools`](../axionax-devtools)     | ✅ Ready   |
+| **Deploy**          | Infrastructure            | [`../axionax-deploy`](../axionax-deploy)         | 🔥 Testing |
+| **Issue Manager**   | Task tracking             | [`../issue-manager`](../issue-manager)           | 🎉 New!    |
 
 ---
 
@@ -187,7 +242,7 @@ CNAME docs -> axionaxprotocol.github.io
 MIT License - see [LICENSE](LICENSE) file for details.
 
 **Note**: The AxionAX Protocol Core uses AGPLv3. See
-[`../core/LICENSE`](../core/LICENSE).
+[`../axionax-core/LICENSE`](../axionax-core/LICENSE).
 
 ---
 
@@ -200,6 +255,27 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
+## 📊 Documentation Coverage
+
+### By Category
+
+- **Core Protocol**: 100% ✅
+- **API Reference**: 90% 📝
+- **User Guides**: 95% ✅
+- **Developer Guides**: 95% ✅
+- **Deployment**: 85% 📝
+- **Troubleshooting**: 80% 📝
+
+### Recent Additions (November 2025)
+
+- 🔥 Testnet Launch Checklist
+- 🔥 Network Information Page
+- 📝 Enhanced API Examples
+- 📝 FAQ Section Expansion
+- 📝 Troubleshooting Guides
+
+---
+
 **Part of the AxionAX Protocol Ecosystem**
 
-**Last Updated**: November 6, 2025
+**Last Updated**: November 7, 2025
