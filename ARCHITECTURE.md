@@ -1,6 +1,6 @@
-# Axionax Protocol — Architecture Overview v1.5 (Breakdown)
+# axionax protocol — Architecture Overview v1.5 (Breakdown)
 
-เอกสารนี้แยกสถาปัตยกรรม Axionax ออกเป็นส่วนย่อยตามสรุปเวอร์ชัน 1.5 เพื่อให้เห็นภาพรวมและรายละเอียดของแต่ละองค์ประกอบได้ชัดเจนขึ้น
+เอกสารนี้แยกสถาปัตยกรรม axionax ออกเป็นส่วนย่อยตามสรุปเวอร์ชัน 1.5 เพื่อให้เห็นภาพรวมและรายละเอียดของแต่ละองค์ประกอบได้ชัดเจนขึ้น
 
 - วงจร L1 แบบบูรณาการ: Execute → Validate PoPC → Data Availability → Settlement
 - ระบบตลาดที่ขับเคลื่อนโดยโปรโตคอล: ASR และ Posted Price Controller
@@ -18,7 +18,7 @@ flowchart LR
     Clients["Users and DApps and Wallets"] --> RPC["RPC Nodes"]
 
     %% Core
-    subgraph L1["Axionax L1"]
+    subgraph L1["axionax L1"]
         direction LR
         subgraph Market["Assignment and Pricing"]
             ASR["Auto Selection Router<br/>Top K weighted VRF"]
@@ -53,7 +53,7 @@ flowchart LR
     Attest["Public Attestations"] -.-> Telemetry
 
     %% Governance and DeAI
-    DAO["Axionax DAO"] -.-> PPC
+    DAO["axionax DAO"] -.-> PPC
     DAO -.-> ASR
     DeAI["DeAI Sentinel and Assist"] -.-> Telemetry
     Telemetry -.-> DeAI
@@ -264,7 +264,7 @@ flowchart TB
 flowchart LR
     Telemetry["Telemetry and Metrics"] --> Sentinel["DeAI Sentinel<br/>Anomaly detection"]
     Attest["Public Attestations"] --> Sentinel
-    Sentinel --> DAO["Axionax DAO"]
+    Sentinel --> DAO["axionax DAO"]
     Assist["Assistive DeAI<br/>Guidance and Explanations"] -.-> Clients["Users and Devs"]
     DAO -.-> Params["Protocol Parameters<br/>PoPC and ASR and PPC and VRF and Fraud Window"]
 ```

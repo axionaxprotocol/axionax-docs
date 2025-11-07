@@ -1,4 +1,4 @@
-# Axionax Protocol — Roadmap
+# axionax protocol — Roadmap
 
 ## Vision
 
@@ -215,7 +215,7 @@ Build the most transparent, secure, and performant Layer-1 blockchain for decent
 
 **Network Expansion**
 - [ ] Geographic diversity initiatives
-- [ ] Hardware certification program (AxionaxBox)
+- [ ] Hardware certification program (axionaxBox)
 - [ ] Enterprise node operator partnerships
 - [ ] Data center partnerships
 - [ ] 1,000+ nodes target
@@ -235,7 +235,7 @@ Build the most transparent, secure, and performant Layer-1 blockchain for decent
 - [ ] Governance participation incentives
 
 **Deliverables**:
-- ✅ 50+ dApps using Axionax
+- ✅ 50+ dApps using axionax
 - ✅ 1,000+ nodes globally
 - ✅ 5,000+ active workers
 - ✅ $10M+ TVL in staking

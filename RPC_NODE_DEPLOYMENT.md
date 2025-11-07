@@ -1,6 +1,6 @@
 # RPC Node Deployment Guide
 
-Quick guide for deploying Axionax RPC nodes for public testnet access.
+Quick guide for deploying axionax RPC nodes for public testnet access.
 
 ## 📋 Prerequisites
 

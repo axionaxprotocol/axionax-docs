@@ -1,5 +1,5 @@
 # Genesis Ceremony & Network Launch
-## Axionax v1.6 Testnet Public Launch
+## axionax v1.6 Testnet Public Launch
 
 > **เอกสารนี้**: ขั้นตอนการจัด Genesis Ceremony และ Launch เครือข่าย Testnet อย่างเป็นทางการ
 
@@ -17,7 +17,7 @@
 
 ## Overview
 
-**Genesis Ceremony** คือกระบวนการสร้าง **Genesis Block** (บล็อกแรก) ของเครือข่าย Axionax Testnet ซึ่งประกอบด้วย:
+**Genesis Ceremony** คือกระบวนการสร้าง **Genesis Block** (บล็อกแรก) ของเครือข่าย axionax Testnet ซึ่งประกอบด้วย:
 - รายชื่อ Validators เริ่มต้น (Genesis Validators)
 - การจัดสรรโทเค็น (Token Allocations)
 - พารามิเตอร์เครือข่าย (Network Parameters)
@@ -107,8 +107,8 @@
 ### Network Parameters
 ```yaml
 # Chain Configuration
-chain_id: 86137                    # Axionax Testnet
-network_name: "Axionax Testnet"
+chain_id: 86137                    # axionax Testnet
+network_name: "axionax Testnet"
 chain_name: "axi-testnet"
 
 # Genesis Time
@@ -328,7 +328,7 @@ axionax-core genesis sign --file genesis-draft.json --key coordinator.key
 ```bash
 # Upload to public location
 # 1. GitHub Release
-gh release create v1.6.0-genesis --notes "Axionax Testnet Genesis" genesis.json
+gh release create v1.6.0-genesis --notes "axionax Testnet Genesis" genesis.json
 
 # 2. IPFS (immutable)
 ipfs add genesis.json
@@ -340,7 +340,7 @@ scp genesis.json user@testnet.axionax.org:/var/www/html/genesis.json
 
 **Announce Publicly**:
 ```
-🎉 Axionax Testnet Genesis Released!
+🎉 axionax Testnet Genesis Released!
 
 Chain ID: 86137
 Genesis Time: 2025-01-15T00:00:00Z
@@ -545,7 +545,7 @@ sudo systemctl reload nginx
 
 **2. Start Faucet**
 ```bash
-cd ~/axionax-core/environments/testnet/Axionax_v1.6_Testnet_in_a_Box/faucet
+cd ~/axionax-core/environments/testnet/axionax_v1.6_Testnet_in_a_Box/faucet
 docker-compose up -d
 
 # Test faucet
@@ -554,7 +554,7 @@ curl 'http://testnet-faucet.axionax.org/request?address=0xTEST_ADDRESS'
 
 **3. Launch Block Explorer**
 ```bash
-cd ~/axionax-core/environments/testnet/Axionax_v1.6_Testnet_in_a_Box
+cd ~/axionax-core/environments/testnet/axionax_v1.6_Testnet_in_a_Box
 docker-compose up -d blockscout
 
 # Wait 5 minutes for indexing
@@ -564,11 +564,11 @@ docker-compose up -d blockscout
 ### Public Announcement (T+1 hour)
 
 ```markdown
-🎊 Axionax Testnet is LIVE! 🎊
+🎊 axionax Testnet is LIVE! 🎊
 
 Network Information:
 - Chain ID: 86137
-- Network Name: Axionax Testnet
+- Network Name: axionax Testnet
 - RPC URL: https://testnet-rpc.axionax.org
 - Explorer: https://testnet-explorer.axionax.org
 - Faucet: https://testnet-faucet.axionax.org

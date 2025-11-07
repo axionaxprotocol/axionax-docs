@@ -1,10 +1,10 @@
-﻿# AxionAX Protocol Documentation 📚
+﻿# axionax protocol Documentation 📚
 
-Official technical documentation for **AxionAX Protocol** - a Layer-1 blockchain
+Official technical documentation for **axionax protocol** - a Layer-1 blockchain
 for high-performance decentralized compute markets.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
+[![Protocol](https://img.shields.io/badge/Protocol-axionax-purple)](https://axionax.org)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.0-red)](https://jekyllrb.com/)
 [![Status](https://img.shields.io/badge/Status-Active-green)](https://docs.axionax.org)
 
@@ -35,11 +35,11 @@ Current documentation efforts:
 ## 📖 About
 
 This repository contains the **complete technical documentation** for the
-AxionAX Protocol, including architecture, API references, guides, and tutorials.
+axionax protocol, including architecture, API references, guides, and tutorials.
 
-### Part of AxionAX Ecosystem
+### Part of axionax Ecosystem
 
-Documentation for the entire AxionAX Protocol:
+Documentation for the entire axionax protocol:
 
 - **Protocol Core**: [`../axionax-core`](../axionax-core) - Blockchain implementation
 - **SDK**: [`../axionax-sdk-ts`](../axionax-sdk-ts) - Developer toolkit
@@ -62,7 +62,7 @@ Documentation for the entire AxionAX Protocol:
 
 ### Core Documentation
 
-- **`ARCHITECTURE.md`** - AxionAX Protocol system design
+- **`ARCHITECTURE.md`** - axionax protocol system design
 - **`QUICKSTART.md`** - Quick start guide
 - **`GETTING_STARTED.md`** - Detailed setup instructions
 - **`API_REFERENCE.md`** - Complete API documentation (📝 Active)
@@ -178,7 +178,7 @@ bundle exec jekyll build
 - ✅ Include code examples with expected outputs
 - ✅ Add diagrams where helpful (Mermaid supported)
 - ✅ Link to related docs (internal navigation)
-- ✅ Keep AxionAX Protocol focus
+- ✅ Keep axionax protocol focus
 - ✅ Update table of contents
 - ✅ Test all code examples
 - ✅ Validate external links (use `check-links.sh` from devtools)
@@ -222,7 +222,7 @@ CNAME docs -> axionaxprotocol.github.io
 
 ---
 
-## 🔗 AxionAX Protocol Ecosystem
+## 🔗 axionax protocol Ecosystem
 
 | Component           | Description               | Location                                         | Status     |
 | ------------------- | ------------------------- | ------------------------------------------------ | ---------- |
@@ -241,7 +241,7 @@ CNAME docs -> axionaxprotocol.github.io
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-**Note**: The AxionAX Protocol Core uses AGPLv3. See
+**Note**: The axionax protocol Core uses AGPLv3. See
 [`../axionax-core/LICENSE`](../axionax-core/LICENSE).
 
 ---
@@ -276,6 +276,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Part of the AxionAX Protocol Ecosystem**
+**Part of the axionax protocol Ecosystem**
 
 **Last Updated**: November 7, 2025

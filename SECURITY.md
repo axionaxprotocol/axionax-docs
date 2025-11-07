@@ -1,12 +1,12 @@
 ---
-title: "Axionax Upgrade Proposal — v1.6"
+title: "axionax Upgrade Proposal — v1.6"
 version: 1.6
 status: ✅ Approved & Implemented
 proposal_id: AXN-UP-016
 last_updated: 2025-10-23
 ---
 
-# Axionax Upgrade v1.6 — "Stability & Transparency Release"
+# axionax Upgrade v1.6 — "Stability & Transparency Release"
 
 **Objective:**  
 เพิ่มความมั่นคงของมูลค่าเหรียญ AXX ใน Marketplace, เสริมการเฝ้าระวังพฤติกรรมตลาดด้วย DeAI Sentinel รุ่นใหม่  
@@ -89,7 +89,7 @@ treasury:
 
 **Subsystem:** Oracle / Treasury  
 **ฟังก์ชันใหม่:**
-- ดึงราคาจาก 3 แหล่ง: Chainlink, Pyth, Axionax Internal Feed
+- ดึงราคาจาก 3 แหล่ง: Chainlink, Pyth, axionax Internal Feed
 - Median Aggregation + deviation guard (|ΔP| < 10%)
 - ส่ง alert เข้า DAO ถ้า deviation เกิน 15%
 
@@ -163,12 +163,12 @@ oracle:
 
 ## 7. References
 - AXX_RiskMitigation_v1.6.md
-- Axionax Protocol — v1.0 (Implementation-Ready)
+- axionax protocol — v1.0 (Implementation-Ready)
 - DAO Governance Framework (v1.4)
 - Sentinel Spec Sheet (internal)
 
 ---
 
-**Maintainer:** Axionax DAO Core  
+**Maintainer:** axionax DAO Core  
 **Contributors:** Tokenomics, Treasury, Sentinel, DevOps Teams  
 **License:** CC-BY-SA 4.0

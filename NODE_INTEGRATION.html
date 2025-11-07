@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axionax – Node Integration Guide</title>
-    <meta name="description" content="Axionax node integration: how to run, configure, publish, and monitor blockchain nodes using Rust API and JSON-RPC.">
+    <title>axionax – Node Integration Guide</title>
+    <meta name="description" content="axionax node integration: how to run, configure, publish, and monitor blockchain nodes using Rust API and JSON-RPC.">
     <link rel="canonical" href="https://axionax.org/docs/NODE_INTEGRATION.html" />
-    <meta property="og:title" content="Axionax – Node Integration Guide">
-    <meta property="og:description" content="Overview of AxionaxNode struct, configuration, network/state/RPC integration, stats querying, publishing blocks, and error handling.">
+    <meta property="og:title" content="axionax – Node Integration Guide">
+    <meta property="og:description" content="Overview of axionaxNode struct, configuration, network/state/RPC integration, stats querying, publishing blocks, and error handling.">
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://axionax.org/docs/NODE_INTEGRATION.html" />
     <meta property="og:image" content="https://axionax.org/assets/og-image.png">
@@ -41,7 +41,7 @@
     <section>
         <h2>Architecture</h2>
         <div class="code-block"><pre><code>┌─────────────────────────────────────────────────┐
-│            AxionaxNode                           │
+│            axionaxNode                           │
 │                                                  │
 │  ┌──────────────┐  ┌──────────────┐  ┌────────┐│
 │  │ NetworkManager│  │   StateDB    │  │  RPC   ││
@@ -58,8 +58,8 @@
 </code></pre></div>
     </section>
     <section>
-        <h2>AxionaxNode Struct</h2>
-        <div class="code-block"><pre><code>pub struct AxionaxNode {
+        <h2>axionaxNode Struct</h2>
+        <div class="code-block"><pre><code>pub struct axionaxNode {
     config: NodeConfig,
     network: Arc<RwLock<NetworkManager>>,
     state: Arc<StateDB>,
@@ -71,13 +71,13 @@
     </section>
     <section>
         <h2>Basic Node Setup (Rust API)</h2>
-        <div class="code-block"><pre><code>use node::{AxionaxNode, NodeConfig};
+        <div class="code-block"><pre><code>use node::{axionaxNode, NodeConfig};
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let mut config = NodeConfig::dev();
     config.state_path = "/tmp/axionax-node".to_string();
     config.rpc_addr = "127.0.0.1:8545".parse()?;
-    let mut node = AxionaxNode::new(config).await?;
+    let mut node = axionaxNode::new(config).await?;
     node.start().await?;
     Ok(())
 }</code></pre></div>
@@ -148,7 +148,7 @@ curl -X POST http://127.0.0.1:8545 \
         </ul>
     </section>
     <footer>
-        <p>Rendered from <code>NODE_INTEGRATION.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">Axionax</a></p>
+        <p>Rendered from <code>NODE_INTEGRATION.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">axionax</a></p>
     </footer>
 </main>
 </body>

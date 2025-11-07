@@ -15,7 +15,7 @@ The Node module integrates three core components into a complete blockchain node
 
 ```
 ┌─────────────────────────────────────────────────┐
-│            AxionaxNode                           │
+│            axionaxNode                           │
 │                                                  │
 │  ┌──────────────┐  ┌──────────────┐  ┌────────┐│
 │  │ NetworkManager│  │   StateDB    │  │  RPC   ││
@@ -33,12 +33,12 @@ The Node module integrates three core components into a complete blockchain node
 
 ## Features
 
-### AxionaxNode
+### axionaxNode
 
-The `AxionaxNode` struct provides a high-level API for running a complete node:
+The `axionaxNode` struct provides a high-level API for running a complete node:
 
 ```rust
-pub struct AxionaxNode {
+pub struct axionaxNode {
     config: NodeConfig,
     network: Arc<RwLock<NetworkManager>>,
     state: Arc<StateDB>,
@@ -80,7 +80,7 @@ pub struct NodeStats {
 ### Basic Node Setup
 
 ```rust
-use node::{AxionaxNode, NodeConfig};
+use node::{axionaxNode, NodeConfig};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -89,7 +89,7 @@ async fn main() -> anyhow::Result<()> {
     config.state_path = "/tmp/axionax-node".to_string();
     config.rpc_addr = "127.0.0.1:8545".parse()?;
     
-    let mut node = AxionaxNode::new(config).await?;
+    let mut node = axionaxNode::new(config).await?;
     
     // Start all components
     node.start().await?;

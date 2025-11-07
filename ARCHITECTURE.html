@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axionax – Protocol Architecture Overview (v1.5)</title>
-    <meta name="description" content="An overview for Axionax Protocol v1.5 covering Layer-1 integration, security, DeAI, DAO governance and protocol parameters.">
+    <title>axionax – Protocol Architecture Overview (v1.5)</title>
+    <meta name="description" content="An overview for axionax protocol v1.5 covering Layer-1 integration, security, DeAI, DAO governance and protocol parameters.">
     <link rel="canonical" href="https://axionax.org/docs/ARCHITECTURE.html" />
-    <meta property="og:title" content="Axionax Protocol Architecture v1.5 Overview">
-    <meta property="og:description" content="Breakdown and detail explanation for Axionax Layer-1, ASR, PPC, PoPC, DA, DeAI, and core system parameters.">
+    <meta property="og:title" content="axionax protocol Architecture v1.5 Overview">
+    <meta property="og:description" content="Breakdown and detail explanation for axionax Layer-1, ASR, PPC, PoPC, DA, DeAI, and core system parameters.">
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://axionax.org/docs/ARCHITECTURE.html" />
     <meta property="og:image" content="https://axionax.org/assets/og-image.png">
@@ -27,17 +27,17 @@
     </style>
 </head>
 <body>
-<main class="markdown-body" aria-label="Axionax Architecture Overview">
-  <h1>Axionax Protocol — Architecture Overview v1.5</h1>
+<main class="markdown-body" aria-label="axionax Architecture Overview">
+  <h1>axionax protocol — Architecture Overview v1.5</h1>
   <aside>
-    <p style="font-size:1.1em;">This document breaks down the Axionax architecture version 1.5 for a clear view of each component and workflow.</p>
+    <p style="font-size:1.1em;">This document breaks down the axionax architecture version 1.5 for a clear view of each component and workflow.</p>
   </aside>
   <section>
     <h2>0) High-Level Overview</h2>
     <div class="code-block" aria-label="Architecture diagram (Mermaid syntax)">
     <pre><code>flowchart LR
   Clients["Users and DApps and Wallets"] --> RPC["RPC Nodes"]
-  subgraph L1["Axionax L1"]
+  subgraph L1["axionax L1"]
     direction LR
     subgraph Market["Assignment and Pricing"]
       ASR["Auto Selection Router&lt;br/&gt;Top K weighted VRF"]
@@ -64,7 +64,7 @@
   Telemetry -.-> DA
   Telemetry -.-> Settle
   Attest["Public Attestations"] -.-> Telemetry
-  DAO["Axionax DAO"] -.-> PPC
+  DAO["axionax DAO"] -.-> PPC
   DAO -.-> ASR
   DeAI["DeAI Sentinel and Assist"] -.-> Telemetry
   Telemetry -.-> DeAI
@@ -189,7 +189,7 @@
   </section>
   <br/>
   <footer>
-    <p>Rendered from <code>ARCHITECTURE.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">Axionax</a></p>
+    <p>Rendered from <code>ARCHITECTURE.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">axionax</a></p>
   </footer>
 </main>
 </body>
