@@ -1,10 +1,10 @@
-# Axionax Core API Reference
+# axionax Core API Reference
 
 Version: 1.5.0-testnet
 
 ## Overview
 
-Axionax Core provides JSON-RPC APIs compatible with Ethereum clients, plus custom extensions for PoPC, ASR, and protocol-specific features.
+axionax Core provides JSON-RPC APIs compatible with Ethereum clients, plus custom extensions for PoPC, ASR, and protocol-specific features.
 
 ## Endpoints
 
@@ -76,7 +76,7 @@ Get AXX balance of an address.
 
 ---
 
-## Axionax Custom Methods
+## axionax Custom Methods
 
 ### axn_submitJob
 

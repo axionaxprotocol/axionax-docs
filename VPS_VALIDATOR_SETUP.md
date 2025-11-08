@@ -1,5 +1,5 @@
 # VPS Validator Setup Guide
-## Axionax v1.6 Testnet Public Launch
+## axionax v1.6 Testnet Public Launch
 
 > **เอกสารนี้**: คู่มือการติดตั้งและตั้งค่า Validator Node บน VPS สำหรับ Testnet Public Launch
 
@@ -7,7 +7,7 @@
 - [ความต้องการขั้นต่ำ](#ความต้องการขั้นต่ำ)
 - [การเตรียม VPS](#การเตรียม-vps)
 - [ติดตั้ง Dependencies](#ติดตั้ง-dependencies)
-- [Build Axionax Node](#build-axionax-node)
+- [Build axionax Node](#build-axionax-node)
 - [ตั้งค่า Validator](#ตั้งค่า-validator)
 - [Genesis Setup](#genesis-setup)
 - [เริ่มต้น Validator Node](#เริ่มต้น-validator-node)
@@ -84,7 +84,7 @@ sudo ufw enable
 # Allow SSH (important!)
 sudo ufw allow 22/tcp
 
-# Allow Axionax P2P
+# Allow axionax P2P
 sudo ufw allow 30303/tcp
 sudo ufw allow 30303/udp
 
@@ -156,7 +156,7 @@ sudo apt install -y protobuf-compiler
 
 ---
 
-## Build Axionax Node
+## Build axionax Node
 
 ### 1. Clone Repository
 ```bash
@@ -257,7 +257,7 @@ node:
   data_dir: "/home/axionax/.axionax/data"
   log_level: "info"
   mode: "validator"  # ⚠️ สำคัญ! ตั้งเป็น validator
-  chain_id: 86137    # Axionax Testnet
+  chain_id: 86137    # axionax Testnet
 
 network:
   listen_addr: "0.0.0.0"
@@ -292,7 +292,7 @@ telemetry:
 ```bash
 # Add to ~/.bashrc
 cat >> ~/.bashrc << 'EOF'
-# Axionax Environment
+# axionax Environment
 export AXIONAX_HOME="$HOME/.axionax"
 export AXIONAX_CONFIG="$AXIONAX_HOME/config/config.yaml"
 export AXIONAX_KEYSTORE="$AXIONAX_HOME/keystore"
@@ -355,7 +355,7 @@ sudo nano /etc/systemd/system/axionax-validator.service
 เพิ่มเนื้อหา:
 ```ini
 [Unit]
-Description=Axionax Validator Node
+Description=axionax Validator Node
 After=network-online.target
 Wants=network-online.target
 
@@ -479,7 +479,7 @@ nano ~/monitor_validator.sh
 VALIDATOR_ADDRESS="YOUR_VALIDATOR_ADDRESS"
 RPC_URL="http://127.0.0.1:8545"
 
-echo "=== Axionax Validator Health Check ==="
+echo "=== axionax Validator Health Check ==="
 echo "Time: $(date)"
 
 # 1. Check if process is running
@@ -659,7 +659,7 @@ tail -f ~/.axionax/logs/validator.log | grep -i "slash\|penalty\|fraud"
 
 - [ ] VPS meets minimum hardware requirements
 - [ ] All dependencies installed correctly
-- [ ] Axionax node built from source (release mode)
+- [ ] axionax node built from source (release mode)
 - [ ] Validator keys generated and backed up securely
 - [ ] Configuration file customized for your validator
 - [ ] Genesis file downloaded and verified

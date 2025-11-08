@@ -1,6 +1,6 @@
-# DNS Setup Guide for Axionax Testnet
+# DNS Setup Guide for axionax Testnet
 
-This guide explains how to configure DNS records for all Axionax testnet services.
+This guide explains how to configure DNS records for all axionax testnet services.
 
 ## 📋 Overview
 
@@ -356,7 +356,7 @@ After DNS setup:
 
 ## 📄 License
 
-This documentation is part of Axionax Protocol, licensed under AGPLv3.
+This documentation is part of axionax protocol, licensed under AGPLv3.
 
 ---
 

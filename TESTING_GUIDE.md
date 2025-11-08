@@ -1,10 +1,10 @@
-# Axionax Core - Testnet Testing Guide
+# axionax Core - Testnet Testing Guide
 
 วันที่: 22 ตุลาคม 2025
 
 ## 🎯 วิธีการทดสอบ Testnet
 
-มี 2 วิธีในการทดสอบ Axionax Core:
+มี 2 วิธีในการทดสอบ axionax Core:
 
 ---
 
@@ -33,7 +33,7 @@ CONTAINER ID   IMAGE   COMMAND   CREATED   STATUS   PORTS   NAMES
 
 ```powershell
 # 1. ไปยังโฟลเดอร์ Testnet
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 
 # 2. เริ่ม services ทั้งหมด
 docker compose up -d
@@ -74,7 +74,7 @@ http://localhost:4001
 http://localhost:8080
 ```
 
-### รัน Axionax Node
+### รัน axionax Node
 
 ```powershell
 # กลับไปโฟลเดอร์หลัก
@@ -86,7 +86,7 @@ cd ..
 
 คุณจะเห็น:
 ```
-🚀 Starting Axionax Core v1.5.0-testnet
+🚀 Starting axionax Core v1.5.0-testnet
 📂 Data directory: .axionax
 🌐 Network: testnet
 🔌 RPC address: 127.0.0.1:8545

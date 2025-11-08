@@ -2,8 +2,8 @@
 
 ## License Summary
 
-Axionax Core is licensed under **GNU Affero General Public License v3.0 (AGPLv3)**
-with additional terms to protect the Axionax Network and community.
+axionax Core is licensed under **GNU Affero General Public License v3.0 (AGPLv3)**
+with additional terms to protect the axionax Network and community.
 
 📄 **Full license:** [LICENSE](./LICENSE)
 
@@ -14,19 +14,19 @@ with additional terms to protect the Axionax Network and community.
 ### 1. Trademark Protection
 
 **Protected marks:**
-- "Axionax" and "Axionax Protocol"
+- "axionax" and "axionax protocol"
 - "AXX" and "AXX Token"
-- Axionax logo and branding materials
+- axionax logo and branding materials
 
 **Unauthorized uses:**
-- ❌ Operating networks claiming to be "official Axionax"
+- ❌ Operating networks claiming to be "official axionax"
 - ❌ Creating tokens branded as "AXX" without authorization
-- ❌ Using Axionax branding to misrepresent derivative works
+- ❌ Using axionax branding to misrepresent derivative works
 
 **Authorized uses:**
 - ✅ Factual references in documentation
 - ✅ Academic research and education
-- ✅ Contributing to the official Axionax project
+- ✅ Contributing to the official axionax project
 
 **Contact for authorization:** legal@axionax.org
 
@@ -41,7 +41,7 @@ This codebase may be used for:
 
 **PROHIBITED without explicit written authorization:**
 - ❌ Launching **public mainnets** with economic tokens
-- ❌ Operating networks that could **confuse users** with official Axionax
+- ❌ Operating networks that could **confuse users** with official axionax
 - ❌ Creating **token systems** claiming to be "AXX"
 
 **Why this restriction?**
@@ -59,7 +59,7 @@ All forks and derivatives MUST:
 - 🆔 Use a **different chain ID** than official networks
 - 🔗 Generate a **different genesis hash**
 - 🏷️ Use a **clearly different name** in all interfaces
-- ⚠️ Display **prominent warnings** that it's NOT official Axionax
+- ⚠️ Display **prominent warnings** that it's NOT official axionax
 
 **Official chain IDs (RESERVED):**
 ```yaml
@@ -69,9 +69,9 @@ Mainnet:  86150  # AXI mainnet (not launched yet)
 
 **Example of compliant fork naming:**
 ```
-✅ "MyChain Network (based on Axionax technology)"
-✅ "Axionax Fork for Research Purposes"
-❌ "Axionax Mainnet" (PROHIBITED)
+✅ "MyChain Network (based on axionax technology)"
+✅ "axionax Fork for Research Purposes"
+❌ "axionax Mainnet" (PROHIBITED)
 ❌ "AXX Chain" (PROHIBITED)
 ```
 
@@ -135,19 +135,19 @@ cargo run -- --chain-id 86137 --testnet
 
 ### Without Authorization
 
-❌ **Clone and launch as "Axionax Mainnet 2.0"**
+❌ **Clone and launch as "axionax Mainnet 2.0"**
 ```bash
 # This violates trademark and mainnet restrictions
 git clone axionax-core
 sed -i 's/86137/99999/' config.yaml
-./launch-mainnet.sh --name "Axionax Mainnet 2.0"
+./launch-mainnet.sh --name "axionax Mainnet 2.0"
 ```
 
 ❌ **Create "AXX Token" on your fork**
 ```solidity
 // This violates trademark protection
 contract AXXToken {
-    string public name = "Axionax Token";  // PROHIBITED
+    string public name = "axionax Token";  // PROHIBITED
     string public symbol = "AXX";          // PROHIBITED
 }
 ```
@@ -155,7 +155,7 @@ contract AXXToken {
 ❌ **Market unauthorized network as "official"**
 ```markdown
 # This is fraudulent
-## Welcome to Axionax Official Mainnet
+## Welcome to axionax Official Mainnet
 Buy AXX tokens now! Only $0.01 each!
 ```
 
@@ -181,7 +181,7 @@ Buy AXX tokens now! Only $0.01 each!
 
 ## 🔍 Verify Official Networks
 
-**Before connecting to any "Axionax" network:**
+**Before connecting to any "axionax" network:**
 
 1. **Check the official registry:**
    https://axionax.org/networks
@@ -193,7 +193,7 @@ Buy AXX tokens now! Only $0.01 each!
 
 3. **Confirm on official channels:**
    - Website: https://axionax.org
-   - Twitter: @AxionaxProtocol
+   - Twitter: @axionaxProtocol
    - Discord: https://discord.gg/axionax
 
 **🚨 WARNING:** Any network NOT listed on https://axionax.org/networks is **UNOFFICIAL** and potentially fraudulent.
@@ -240,4 +240,4 @@ We believe in open source AND protecting our community from fraud.
 ---
 
 **Last updated:** October 24, 2025  
-**License version:** AGPLv3 with Axionax Network Protection Clause v1.0
+**License version:** AGPLv3 with axionax Network Protection Clause v1.0

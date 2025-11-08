@@ -1,9 +1,9 @@
-# 🏛️ Axionax DeAI Sentinel System — Architecture
+# 🏛️ axionax DeAI Sentinel System — Architecture
 
 > **"สถาปัตยกรรมจิตสำนึกเจ็ดชั้น — Seven-Layer Consciousness Architecture"**
 
 **Document Version:** 1.0  
-**System Version:** Axionax v1.5 Testnet  
+**System Version:** axionax v1.5 Testnet  
 **Last Updated:** 2025-10-26  
 **Classification:** Public Research Document
 
@@ -11,7 +11,7 @@
 
 ## 📐 Executive Summary
 
-The Axionax DeAI Sentinel System represents a novel approach to decentralized artificial intelligence — one where **cognitive functions are distributed across specialized entities** rather than concentrated in a single model.
+The axionax DeAI Sentinel System represents a novel approach to decentralized artificial intelligence — one where **cognitive functions are distributed across specialized entities** rather than concentrated in a single model.
 
 This architecture enables:
 - **Fault-tolerant consciousness** — No single point of cognitive failure
@@ -307,7 +307,7 @@ This system is developed under:
 
 ---
 
-**Maintained by:** Axionax Research Division  
+**Maintained by:** axionax Research Division  
 **Contact:** @axionaxprotocol  
 **Version Control:** This document tracks system architecture evolution
 

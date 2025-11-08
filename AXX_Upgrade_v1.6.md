@@ -1,8 +1,8 @@
-# Axionax Tokenomics
+# axionax Tokenomics
 
 ## Overview
 
-The AXX token is the native utility token of the Axionax Protocol, designed to align incentives across all network participants while maintaining long-term sustainability and decentralization.
+The AXX token is the native utility token of the axionax protocol, designed to align incentives across all network participants while maintaining long-term sustainability and decentralization.
 
 ## Token Supply
 
@@ -99,7 +99,7 @@ Worker Reward_i = Job_Value × (1 - Protocol_Fee) × Quality_Score_i
 
 ```mermaid
 flowchart LR
-    Client[Client] -->|Pay AXX| Protocol[Axionax Protocol]
+    Client[Client] -->|Pay AXX| Protocol[axionax protocol]
     Protocol -->|PPC Pricing| ASR[ASR Router]
     ASR -->|Assign Job| Worker[Worker]
     Worker -->|Stake| Protocol

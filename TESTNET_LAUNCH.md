@@ -1,7 +1,7 @@
 # Testnet Public Launch Guide
-## Axionax v1.6 - Complete Deployment Plan
+## axionax v1.6 - Complete Deployment Plan
 
-> **Document Purpose**: Master guide สำหรับการเตรียมและ launch Axionax Testnet สู่สาธารณะ
+> **Document Purpose**: Master guide สำหรับการเตรียมและ launch axionax Testnet สู่สาธารณะ
 
 ## 📑 Table of Contents
 - [Overview](#overview)
@@ -27,7 +27,7 @@
 
 ### Network Specifications
 ```yaml
-Network Name: Axionax Testnet
+Network Name: axionax Testnet
 Chain ID: 86137
 Consensus: PoPC (Proof-of-Probabilistic-Checking)
 Block Time: 5 seconds
@@ -416,7 +416,7 @@ curl 'https://testnet-faucet.axionax.org/health'
 
 **6.2 Publish Launch Announcement**
 ```markdown
-🎊 Axionax Testnet is LIVE! 🎊
+🎊 axionax Testnet is LIVE! 🎊
 
 Network Details:
 - Chain ID: 86137

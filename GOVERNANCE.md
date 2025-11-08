@@ -1,8 +1,8 @@
-# Axionax DAO Governance
+# axionax DAO Governance
 
 ## Overview
 
-Axionax is governed by a decentralized autonomous organization (DAO) where AXX token holders collectively make decisions about the protocol's future.
+axionax is governed by a decentralized autonomous organization (DAO) where AXX token holders collectively make decisions about the protocol's future.
 
 ---
 
@@ -206,7 +206,7 @@ axionax-core governance vote \
 
 **Recipient**: [Name/Team]
 **Amount**: 10,000,000 AXX ($100,000 at current price)
-**Purpose**: Build AI training marketplace on Axionax
+**Purpose**: Build AI training marketplace on axionax
 **Milestones**:
 1. MVP (25%): 2,500,000 AXX
 2. Beta launch (50%): 5,000,000 AXX

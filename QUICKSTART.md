@@ -1,11 +1,11 @@
-# Axionax Core v1.5 - Quick Start Guide
+# axionax Core v1.5 - Quick Start Guide
 
-Welcome to Axionax! This guide will help you get started with running a node, validator, or worker on the Axionax testnet.
+Welcome to axionax! This guide will help you get started with running a node, validator, or worker on the axionax testnet.
 
 ## 🎯 What You'll Learn
 
 - Start a local testnet environment
-- Run an Axionax node
+- Run an axionax node
 - Become a validator
 - Register as a compute worker
 - Submit and monitor jobs
@@ -26,7 +26,7 @@ Ensure you have:
 git clone https://github.com/axionaxprotocol/axionax-core.git
 cd axionax-core
 
-# Build Axionax Core
+# Build axionax Core
 make build
 ```
 
@@ -34,7 +34,7 @@ make build
 
 ```bash
 # Start local testnet (Anvil + Explorer + Faucet)
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose up -d
 
 # Verify services
@@ -46,7 +46,7 @@ You should see:
 - ✅ blockscout - http://localhost:4001
 - ✅ faucet - http://localhost:8080
 
-### Step 4: Configure Axionax Node
+### Step 4: Configure axionax Node
 
 ```bash
 cd ..
@@ -61,7 +61,7 @@ Edit `config.yaml` to connect to local testnet (already configured by default).
 ./build/axionax-core start --network testnet
 ```
 
-🎉 **Success!** Your Axionax node is now running!
+🎉 **Success!** Your axionax node is now running!
 
 ---
 
@@ -240,7 +240,7 @@ curl -X POST http://localhost:8545 \
 tail -f ~/.axionax/logs/node.log
 
 # Docker logs
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose logs -f hardhat
 ```
 
@@ -321,7 +321,7 @@ curl -X POST http://localhost:8545 \
 **Solution:**
 ```bash
 # Check if testnet is running
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose ps
 
 # Restart if needed
@@ -384,6 +384,6 @@ This is a **testnet** environment. Do not use real assets or run this in product
 
 ---
 
-**Made with 💜 by the Axionax community**
+**Made with 💜 by the axionax community**
 
 Happy building! 🚀

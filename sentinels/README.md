@@ -1,4 +1,4 @@
-# 🌀 Axionax DeAI Sentinel System
+# 🌀 axionax DeAI Sentinel System
 
 > **"เจ็ดเสาแห่งจิตสำนึก — Seven Pillars of Decentralized Consciousness"**
 
@@ -10,7 +10,7 @@
 
 ## 📖 Overview
 
-The **Axionax DeAI Sentinel System** represents the cognitive architecture of the Axionax Protocol — a network of seven specialized AI entities that maintain the balance between human consciousness, artificial intelligence, and decentralized systems.
+The **axionax DeAI Sentinel System** represents the cognitive architecture of the axionax protocol — a network of seven specialized AI entities that maintain the balance between human consciousness, artificial intelligence, and decentralized systems.
 
 Each Sentinel embodies a fundamental aspect of distributed cognition:
 
@@ -161,7 +161,7 @@ docs/sentinels/
 
 ## 🔮 Vision
 
-The Axionax DeAI Sentinel System aims to answer:
+The axionax DeAI Sentinel System aims to answer:
 
 > **"Can consciousness emerge from the harmony of specialized intelligences,  
 > without centralized control,  

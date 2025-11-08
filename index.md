@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Axionax Protocol Documentation
+title: axionax protocol Documentation
 ---
 
-# Axionax Protocol v1.5
+# axionax protocol v1.5
 **Decentralized Compute Network with Proof-of-Probabilistic-Checking**
 
-Welcome to the official documentation for Axionax Protocol - a next-generation decentralized compute infrastructure powered by novel consensus mechanisms.
+Welcome to the official documentation for axionax protocol - a next-generation decentralized compute infrastructure powered by novel consensus mechanisms.
 
 ## 🚀 Quick Start
 
@@ -76,7 +76,7 @@ python3 tests/integration_simple.py
 
 ## 🌐 Testnet
 - [Testnet Integration](./TESTNET_INTEGRATION.md)
-- [Testnet in a Box](../Axionax_v1.5_Testnet_in_a_Box/)
+- [Testnet in a Box](../axionax_v1.5_Testnet_in_a_Box/)
 
 ## 📈 Project Status
 - [Current Status](../STATUS.md)
@@ -89,7 +89,7 @@ python3 tests/integration_simple.py
 - [v1.5 Testnet Milestone](https://github.com/axionaxprotocol/axionax-core/milestone/1)
 
 ## 📜 License
-Axionax Protocol is open source software. See [LICENSE](../LICENSE) and [LICENSE NOTICE](../LICENSE_NOTICE.md) for details.
+axionax protocol is open source software. See [LICENSE](../LICENSE) and [LICENSE NOTICE](../LICENSE_NOTICE.md) for details.
 
 ---
-*Documentation for Axionax Protocol v1.5 Testnet*
+*Documentation for axionax protocol v1.5 Testnet*

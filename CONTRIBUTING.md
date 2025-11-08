@@ -1,6 +1,6 @@
-# Contributing to Axionax Core
+# Contributing to axionax Core
 
-Thank you for your interest in contributing to Axionax! This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to axionax! This document provides guidelines and instructions for contributing to the project.
 
 ## 🌟 Ways to Contribute
 
@@ -444,7 +444,7 @@ By contributing, you agree that your contributions will be licensed under the sa
 
 ## 🙏 Thank You!
 
-Every contribution, no matter how small, makes a difference. We appreciate your time and effort in making Axionax better!
+Every contribution, no matter how small, makes a difference. We appreciate your time and effort in making axionax better!
 
 ---
 

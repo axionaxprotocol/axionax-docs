@@ -1,4 +1,4 @@
-# Axionax Core v1.6 - Project Structure
+# axionax Core v1.6 - Project Structure
 
 Updated: November 1, 2025
 
@@ -35,8 +35,8 @@ axionax-core/
 ├── environments/                     # 🌍 Environment configurations
 │   ├── mainnet/                      # Mainnet config (reserved)
 │   ├── testnet/                      # Testnet configurations
-│   │   ├── Axionax_v1.5_Testnet_in_a_Box/  # v1.5 testnet
-│   │   └── Axionax_v1.6_Testnet_in_a_Box/  # v1.6 testnet
+│   │   ├── axionax_v1.5_Testnet_in_a_Box/  # v1.5 testnet
+│   │   └── axionax_v1.6_Testnet_in_a_Box/  # v1.6 testnet
 │   ├── config.example.yaml           # Example configuration
 │   ├── docker-compose.yaml           # Docker setup
 │   └── README.md                     # Environment documentation
@@ -120,7 +120,7 @@ axionax-core/
   - Node discovery, message propagation
 
 - **`core/rpc/`**: JSON-RPC server
-  - Standard Ethereum RPC + Axionax custom methods
+  - Standard Ethereum RPC + axionax custom methods
 
 ### DeAI Layer (Python)
 
@@ -150,7 +150,7 @@ axionax-core/
 ### Documentation
 
 - **`docs/API_REFERENCE.md`**: Complete API documentation
-  - Standard Ethereum RPC + Axionax custom methods
+  - Standard Ethereum RPC + axionax custom methods
 
 - **`docs/NEW_ARCHITECTURE.md`**: v1.6 multi-language architecture
   - Rust, Python, TypeScript integration
@@ -269,14 +269,14 @@ make benchmark       # Run performance benchmarks
 
 ### Testnet v1.6
 
-- **Location**: `environments/testnet/Axionax_v1.6_Testnet_in_a_Box/`
+- **Location**: `environments/testnet/axionax_v1.6_Testnet_in_a_Box/`
 - **RPC**: http://localhost:8545
 - **Chain ID**: 86137
-- **Setup**: See `environments/testnet/Axionax_v1.6_Testnet_in_a_Box/README.md`
+- **Setup**: See `environments/testnet/axionax_v1.6_Testnet_in_a_Box/README.md`
 
 ### Testnet v1.5 (Legacy)
 
-- **Location**: `environments/testnet/Axionax_v1.5_Testnet_in_a_Box/`
+- **Location**: `environments/testnet/axionax_v1.5_Testnet_in_a_Box/`
 - **RPC**: http://localhost:8545
 - **Chain ID**: 31337 (Anvil local)
 - **Smart Contracts**: See `shared/addresses.json`
@@ -361,7 +361,7 @@ Settlement & Rewards
 - **Code Signing**: All releases should be signed
 - **Audit**: Security audit planned before mainnet
 
-⚠️ **WARNING**: Any network claiming to be "Axionax Mainnet" is a SCAM.  
+⚠️ **WARNING**: Any network claiming to be "axionax Mainnet" is a SCAM.  
 Verify at: https://axionax.org/networks
 
 ## Quick Links

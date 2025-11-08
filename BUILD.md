@@ -1,4 +1,4 @@
-# Axionax Core - Build and Development Guide
+# axionax Core - Build and Development Guide
 
 > **Version**: v1.6+ (Rust + Python + TypeScript)  
 > **Last Updated**: November 2025
@@ -115,7 +115,7 @@ npm test
 
 Expected output:
 ```
-Axionax Core v1.6.0
+axionax Core v1.6.0
 Git Commit: abc1234
 Built:      2025-11-01
 Rust:       1.75.0

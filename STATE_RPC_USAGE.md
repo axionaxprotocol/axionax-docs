@@ -326,7 +326,7 @@ Tests cover:
 
 ### Chain ID
 
-Axionax uses chain ID **86137** (0x15079 in hex):
+axionax uses chain ID **86137** (0x15079 in hex):
 
 ```rust
 let handle = start_rpc_server(addr, state, 86137).await?;

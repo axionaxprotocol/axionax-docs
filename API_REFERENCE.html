@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axionax Core – API Reference v1.5</title>
-    <meta name="description" content="Axionax Core API reference covering all available JSON-RPC endpoints for standard, custom compute, worker/validator, and node management.">
+    <title>axionax Core – API Reference v1.5</title>
+    <meta name="description" content="axionax Core API reference covering all available JSON-RPC endpoints for standard, custom compute, worker/validator, and node management.">
     <link rel="canonical" href="https://axionax.org/docs/API_REFERENCE.html" />
-    <meta property="og:title" content="Axionax Core – API Reference v1.5">
-    <meta property="og:description" content="Comprehensive API reference for Axionax: JSON-RPC, PoPC, ASR, pricing, worker registry, metrics, and error code documentation.">
+    <meta property="og:title" content="axionax Core – API Reference v1.5">
+    <meta property="og:description" content="Comprehensive API reference for axionax: JSON-RPC, PoPC, ASR, pricing, worker registry, metrics, and error code documentation.">
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://axionax.org/docs/API_REFERENCE.html" />
     <meta property="og:image" content="https://axionax.org/assets/og-image.png">
@@ -34,13 +34,13 @@
     </style>
 </head>
 <body>
-<main class="markdown-body" aria-label="Axionax API Reference">
-    <h1>Axionax Core API Reference</h1>
+<main class="markdown-body" aria-label="axionax API Reference">
+    <h1>axionax Core API Reference</h1>
     <p>Version: 1.5.0-testnet</p>
 
     <section>
         <h2>Overview</h2>
-        <p>Axionax Core provides JSON-RPC API compatible with Ethereum clients + custom extensions for compute, consensus, worker, and network status.</p>
+        <p>axionax Core provides JSON-RPC API compatible with Ethereum clients + custom extensions for compute, consensus, worker, and network status.</p>
         <ul>
             <li><b>Standard JSON-RPC</b> (port 8545): Ethereum-compatible</li>
             <li><b>WebSocket</b> (port 8546): Real-time event subscriptions</li>
@@ -77,7 +77,7 @@
     </section>
 
     <section>
-        <h2>Axionax Custom Methods</h2>
+        <h2>axionax Custom Methods</h2>
         <h3>axn_submitJob</h3>
         <ul>
             <li><b>Submit a compute job to the network.</b></li>
@@ -186,7 +186,7 @@ gp const pricing = await web3.currentProvider.send('axn_getPricingInfo', []);
 w3 = Web3(Web3.HTTPProvider('http://localhost:8545'))
 # Standard method
 chain_id = w3.eth.chain_id
-# Custom Axionax method
+# Custom axionax method
 pricing = w3.provider.make_request('axn_getPricingInfo', [])
 </code></pre></div>
     </section>
@@ -199,7 +199,7 @@ pricing = w3.provider.make_request('axn_getPricingInfo', [])
         </ul>
     </section>
     <footer>
-        <p>Rendered from <code>API_REFERENCE.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">Axionax</a></p>
+        <p>Rendered from <code>API_REFERENCE.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">axionax</a></p>
     </footer>
 </main>
 </body>

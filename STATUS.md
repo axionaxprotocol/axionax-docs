@@ -1,4 +1,4 @@
-# สถานะโครงการ Axionax Core | Project Status
+# สถานะโครงการ axionax Core | Project Status
 
 > **อัปเดตล่าสุด | Last Updated**: 2025-10-26
 > **เวอร์ชัน | Version**: v1.6.0-dev
@@ -36,7 +36,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
 ### 🔗 Node Integration (October 26, 2025) ✅
 
 #### Complete Blockchain Node (~450 lines) ✅
-- ✅ **AxionaxNode Structure**
+- ✅ **axionaxNode Structure**
   - Integrates NetworkManager + StateDB + RPC Server
   - Thread-safe Arc<RwLock> for concurrent access
   - Lifecycle management (start/shutdown)
@@ -135,7 +135,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
   - test_transaction_not_found: Error handling
 
 #### RPC Module with JSON-RPC 2.0 (~370 lines) ✅
-- ✅ **AxionaxRpc Trait** (6 methods)
+- ✅ **axionaxRpc Trait** (6 methods)
   - eth_blockNumber: Get current block number
   - eth_getBlockByNumber: Retrieve block by number/latest
   - eth_getBlockByHash: Retrieve block by hash
@@ -158,7 +158,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
   - Automatic ErrorObjectOwned conversion
 
 - ✅ **Server Implementation**
-  - AxionaxRpcServerImpl with Arc<StateDB>
+  - axionaxRpcServerImpl with Arc<StateDB>
   - start_rpc_server(): Async server initialization
   - Hex parsing utilities (parse_hex_u64, parse_hex_hash)
   - Full async/await support with tokio
@@ -244,7 +244,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
   - 4 unit tests passing
 
 - ✅ **libp2p Behaviour** (`behaviour.rs`, 143 lines)
-  - AxionaxBehaviour combining 5 protocols:
+  - axionaxBehaviour combining 5 protocols:
     - Gossipsub (message propagation)
     - mDNS (local peer discovery)
     - Kademlia DHT (distributed routing)
@@ -456,7 +456,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
    - [ ] Set up JSON-RPC server (jsonrpc-core)
    - [ ] Implement eth_* compatible methods
    - [ ] Add WebSocket support
-   - [ ] Create custom Axionax methods
+   - [ ] Create custom axionax methods
    - [ ] Add authentication and rate limiting
 
 ### 📅 Phase 4: Integration (Month 4)
@@ -558,7 +558,7 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
 - **Files**: [LICENSE](./LICENSE), [LICENSE_NOTICE.md](./LICENSE_NOTICE.md)
 
 #### ✅ MITIGATED: Chain Identity Protection
-- **Risk**: Fake networks impersonating Axionax
+- **Risk**: Fake networks impersonating axionax
 - **Status**: RESOLVED
 - **Mitigation**:
   - Unique chain IDs (86137 testnet, 86150 mainnet)
@@ -710,4 +710,4 @@ Phase 1-4: v1.6 Full Integration (Q4'25)
 
 ---
 
-Made with 💜 by the Axionax Core Team
+Made with 💜 by the axionax Core Team

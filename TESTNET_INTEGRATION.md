@@ -1,13 +1,13 @@
-# Axionax Core - RPC Client Integration
+# axionax Core - RPC Client Integration
 
-This package provides RPC client integration with the Axionax testnet running on Anvil.
+This package provides RPC client integration with the axionax testnet running on Anvil.
 
 ## Quick Setup
 
 ### 1. Start Testnet-in-a-Box
 
 ```bash
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose up -d
 ```
 
@@ -16,11 +16,11 @@ docker compose up -d
 The testnet exposes the following endpoints:
 
 - **RPC**: http://localhost:8545
-- **Chain ID**: 86137 (Axionax Testnet)
+- **Chain ID**: 86137 (axionax Testnet)
 - **Explorer**: http://localhost:4001
 - **Note**: For local dev, legacy chain ID 31337 may still be used
 
-### 3. Configure Axionax Core
+### 3. Configure axionax Core
 
 Edit `config.yaml` or use environment variables:
 
@@ -40,7 +40,7 @@ export AXIONAX_NODE_CHAIN_ID=31337
 export AXIONAX_NETWORK_BOOTSTRAP_NODES="http://localhost:8545"
 ```
 
-### 4. Run Axionax Node
+### 4. Run axionax Node
 
 ```bash
 # Initialize configuration
@@ -54,7 +54,7 @@ export AXIONAX_NETWORK_BOOTSTRAP_NODES="http://localhost:8545"
 
 The testnet comes with pre-deployed contracts:
 
-- **AXX Token**: Check `Axionax_v1.5_Testnet_in_a_Box/shared/addresses.json`
+- **AXX Token**: Check `axionax_v1.5_Testnet_in_a_Box/shared/addresses.json`
 
 ### Example: Query AXX Balance
 
@@ -195,7 +195,7 @@ http://localhost:4001
 
 Make sure the testnet is running:
 ```bash
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose ps
 ```
 

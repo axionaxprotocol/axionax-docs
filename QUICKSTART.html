@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axionax Core v1.5 – Quick Start Guide</title>
-    <meta name="description" content="Step-by-step quick start guide to install, configure, and join the Axionax blockchain network as a node, validator, or worker.">
+    <title>axionax Core v1.5 – Quick Start Guide</title>
+    <meta name="description" content="Step-by-step quick start guide to install, configure, and join the axionax blockchain network as a node, validator, or worker.">
     <link rel="canonical" href="https://axionax.org/docs/QUICKSTART.html" />
-    <meta property="og:title" content="Axionax Core v1.5 – Quick Start Guide">
-    <meta property="og:description" content="Quick start and troubleshooting for installing/testnet/validator/worker/node on Axionax L1 blockchain.">
+    <meta property="og:title" content="axionax Core v1.5 – Quick Start Guide">
+    <meta property="og:description" content="Quick start and troubleshooting for installing/testnet/validator/worker/node on axionax L1 blockchain.">
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://axionax.org/docs/QUICKSTART.html" />
     <meta property="og:image" content="https://axionax.org/assets/og-image.png">
@@ -34,13 +34,13 @@
     </style>
 </head>
 <body>
-<main class="markdown-body" aria-label="Axionax Quick Start">
-    <h1>Axionax Core v1.5 – Quick Start Guide</h1>
+<main class="markdown-body" aria-label="axionax Quick Start">
+    <h1>axionax Core v1.5 – Quick Start Guide</h1>
     <section>
         <h2>🎯 What You'll Learn</h2>
         <ul>
             <li>Start a local testnet environment</li>
-            <li>Run an Axionax node</li>
+            <li>Run an axionax node</li>
             <li>Become a validator</li>
             <li>Register as a compute worker</li>
             <li>Submit and monitor jobs</li>
@@ -59,11 +59,11 @@
         <div class="code-block"><pre><code># Clone repository
 git clone https://github.com/axionaxprotocol/axionax-core.git
 cd axionax-core
-# Build Axionax Core
+# Build axionax Core
 make build</code></pre></div>
         <h3>Step 3: Start Testnet</h3>
         <div class="code-block"><pre><code># Start local testnet (Anvil + Explorer + Faucet)
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose up -d
 # Verify services
 docker compose ps</code></pre></div>
@@ -72,13 +72,13 @@ docker compose ps</code></pre></div>
             <li>✅ blockscout - http://localhost:4001</li>
             <li>✅ faucet - http://localhost:8080</li>
         </ul>
-        <h3>Step 4: Configure Axionax Node</h3>
+        <h3>Step 4: Configure axionax Node</h3>
         <div class="code-block"><pre><code>cd ..
 ./build/axionax-core config init</code></pre></div>
         <p>Edit <code>config.yaml</code> to connect to local testnet (already configured by default).</p>
         <h3>Step 5: Start Your Node</h3>
         <div class="code-block"><pre><code>./build/axionax-core start --network testnet</code></pre></div>
-        <p>🎉 <strong>Success!</strong> Your Axionax node is now running!</p>
+        <p>🎉 <strong>Success!</strong> Your axionax node is now running!</p>
     </section>
 
     <section>
@@ -191,7 +191,7 @@ EOF</code></pre></div></li>
         <div class="code-block"><pre><code># Node logs
 tail -f ~/.axionax/logs/node.log
 # Docker logs
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose logs -f hardhat</code></pre></div>
         <h3>Check Metrics</h3>
         <p>Visit <a href="http://localhost:9090/metrics" target="_blank">http://localhost:9090/metrics</a> for Prometheus metrics.</p>
@@ -236,7 +236,7 @@ docker compose logs -f hardhat</code></pre></div>
         <h3>Connection Refused</h3>
         <p><b>Problem:</b> Cannot connect to RPC endpoint</p>
         <div class="code-block"><pre><code># Check if testnet is running
-cd Axionax_v1.5_Testnet_in_a_Box
+cd axionax_v1.5_Testnet_in_a_Box
 docker compose ps
 # Restart if needed
 docker compose restart</code></pre></div>
@@ -282,7 +282,7 @@ docker compose up -d</code></pre></div>
         <p>This is a <b>testnet</b> environment. Do not use real assets or run this in production without proper security audits.</p>
     </section>
     <footer>
-        <p>Rendered from <code>QUICKSTART.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">Axionax</a></p>
+        <p>Rendered from <code>QUICKSTART.html</code> — Last updated Oct 2025 — <a href="https://axionax.org">axionax</a></p>
     </footer>
 </main>
 </body>
