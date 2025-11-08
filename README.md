@@ -50,7 +50,7 @@ Documentation for the entire AxionAX Protocol:
 - **Issue Manager**: [`../issue-manager`](../issue-manager) - Task tracking
 
 **Main Repository**:
-[axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+[axionaxprotocol/axionax-core](https://github.com/axionaxprotocol/axionax-core)
 
 **Live Site**: [docs.axionax.org](https://docs.axionax.org)
 
@@ -248,10 +248,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
+- **Main Repository**: https://github.com/axionaxprotocol/axionax-core
 - **Live Documentation**: https://docs.axionax.org
 - **Protocol Website**: https://axionax.org
-- **Issues**: https://github.com/axionaxprotocol/axionaxiues/issues
+- **Issues**: https://github.com/axionaxprotocol/axionax-core/issues
 
 ---
 
