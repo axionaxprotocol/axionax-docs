@@ -8,6 +8,22 @@ title: axionax protocol Documentation
 
 Welcome to the official documentation for axionax protocol - a next-generation decentralized compute infrastructure powered by novel consensus mechanisms.
 
+## 🏗️ Testnet Infrastructure Status (November 13, 2025)
+
+**Deployment Progress: 78% Complete (7/9 Services Operational)**
+
+| Category | Status | Details |
+|----------|--------|---------|
+| **Infrastructure** | ✅ 5/5 Healthy | PostgreSQL, Redis, Nginx/SSL, RPC Node |
+| **Monitoring** | ✅ 2/2 Healthy | Grafana v12.2.1, Prometheus |
+| **Applications** | 🔧 0/2 Debugging | Explorer API, Faucet API |
+
+**VPS**: vmi2895217 (217.216.109.5) • **Chain ID**: 888 • **Network**: axionax-testnet-1
+
+📊 **[Full Infrastructure Status](https://github.com/axionaxprotocol/axionax-docs/blob/main/INFRASTRUCTURE_STATUS.md)** | **[Health Checks Guide](HEALTH_CHECKS.md)** | **[Monitoring Setup](MONITORING.md)**
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites Installation
