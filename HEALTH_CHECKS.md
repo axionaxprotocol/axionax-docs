@@ -2,7 +2,7 @@
 
 Comprehensive guide to health check system for axionax protocol services.
 
-**Last Updated**: November 12, 2025
+**Last Updated**: November 13, 2025
 
 ---
 
@@ -10,7 +10,7 @@ Comprehensive guide to health check system for axionax protocol services.
 
 The axionax protocol deployment includes a robust health checking system that monitors all 9 services in real-time.
 
-### Monitored Services
+### Monitored Services (Current Status: 7/9 Operational)
 
 | # | Service | Port | Health Check Method | Status |
 |---|---------|------|---------------------|--------|
@@ -19,11 +19,15 @@ The axionax protocol deployment includes a robust health checking system that mo
 | 3 | Grafana | 3030 | HTTP /api/health | ✅ Healthy |
 | 4 | RPC HTTP | 8545 | HTTP /health | ✅ Healthy |
 | 5 | RPC WebSocket | 8546 | TCP Connect | ✅ Healthy |
-| 6 | Explorer API | 3001 | Container Status | ✅ Healthy |
-| 7 | Faucet API | 3002 | Container Status | ✅ Healthy |
+| 6 | Explorer API | 3001 | Container Status | ❌ Not Responding |
+| 7 | Faucet API | 3002 | Container Status | ❌ Not Responding |
 | 8 | Prometheus | 9090 | HTTP /-/healthy | ✅ Healthy |
 | 9 | PostgreSQL | 5432 | pg_isready | ✅ Healthy |
 | 10 | Redis | 6379 | redis-cli ping | ✅ Healthy |
+
+**Infrastructure Services**: 5/5 Healthy ✅  
+**Monitoring Stack**: 2/2 Healthy ✅  
+**Application Services**: 0/2 Responding ❌ (Troubleshooting in progress)
 
 ---
 
