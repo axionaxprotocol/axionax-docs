@@ -147,7 +147,7 @@
     <div class="container">
       <div class="badge animate-in">
         <span class="pulse"></span>
-        <span>v1.6.0-dev • 🌐 Public Testnet LIVE</span>
+        <span>v1.6.0-dev • 🟡 Testnet 78% Deployed (7/9 Services)</span>
       </div>
       
       <h1 class="animate-in" style="animation-delay: 0.1s;">
@@ -159,10 +159,12 @@
       </p>
       
       <div class="security-warning animate-in" style="animation-delay: 0.3s;">
-        <h3>⚠️ Security Notice</h3>
-        <p><strong>This is TESTNET code. Mainnet has NOT launched.</strong></p>
-        <p>Official Networks: <strong>Testnet Chain ID: 86137</strong> (active) • <strong>Mainnet Chain ID: 86150</strong> (reserved)</p>
-        <p>Any network claiming to be "axionax Mainnet" is a SCAM. Verify at <a href="https://axionax.org/networks" target="_blank">axionax.org/networks</a></p>
+        <h3>🏗️ Infrastructure Status</h3>
+        <p><strong>Testnet Deployment: 78% Complete (7/9 Services Operational)</strong></p>
+        <p><strong>✅ Live:</strong> RPC (8545/8546), PostgreSQL, Redis, Nginx/SSL, Grafana, Prometheus, Web Interface</p>
+        <p><strong>🔧 Debugging:</strong> Explorer API (3001), Faucet API (3002)</p>
+        <p>VPS: vmi2895217 (217.216.109.5) • <strong>Chain ID: 888</strong> • Network: axionax-testnet-1</p>
+        <p>Status Dashboard: <a href="https://github.com/axionaxprotocol/axionax-docs/blob/main/INFRASTRUCTURE_STATUS.md" target="_blank">INFRASTRUCTURE_STATUS.md</a></p>
       </div>
       
       <div class="cta-buttons animate-in" style="animation-delay: 0.4s;">
@@ -191,62 +193,62 @@
       <!-- Network Status Dashboard -->
       <div class="network-dashboard">
         <div class="dashboard-header">
-          <h3>📊 Network Status Dashboard</h3>
+          <h3>📊 Network Status Dashboard (VPS vmi2895217)</h3>
           <div class="status-indicator">
-            <span class="status-dot status-online"></span>
-            <span class="status-text">All Systems Operational</span>
+            <span class="status-dot status-warning"></span>
+            <span class="status-text">7/9 Services Operational (78%)</span>
           </div>
         </div>
 
         <!-- Real-time Metrics -->
         <div class="metrics-grid">
           <div class="metric-card">
+            <div class="metric-icon">�️</div>
+            <div class="metric-value">7/9</div>
+            <div class="metric-label">Services Healthy</div>
+            <div class="metric-trend trend-up">Infrastructure 100%</div>
+          </div>
+
+          <div class="metric-card">
             <div class="metric-icon">📦</div>
-            <div class="metric-value" id="block-height">Loading...</div>
-            <div class="metric-label">Block Height</div>
-            <div class="metric-trend trend-up">↑ 12/min</div>
+            <div class="metric-value" id="block-height">1,000</div>
+            <div class="metric-label">Mock Block Height</div>
+            <div class="metric-trend trend-stable">Auto-increment</div>
           </div>
 
           <div class="metric-card">
             <div class="metric-icon">⚡</div>
-            <div class="metric-value" id="block-time">5.2s</div>
-            <div class="metric-label">Avg Block Time</div>
-            <div class="metric-trend trend-stable">≈ Target: 5s</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-icon">👥</div>
-            <div class="metric-value" id="validators">Loading...</div>
-            <div class="metric-label">Active Validators</div>
-            <div class="metric-trend trend-up">↑ 100% online</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-icon">💸</div>
-            <div class="metric-value" id="transactions">Loading...</div>
-            <div class="metric-label">Total Transactions</div>
-            <div class="metric-trend trend-up">↑ +1.2K today</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-icon">🔄</div>
-            <div class="metric-value" id="tps">Loading...</div>
-            <div class="metric-label">Current TPS</div>
-            <div class="metric-trend trend-stable">Peak: 250 TPS</div>
+            <div class="metric-value">44h+</div>
+            <div class="metric-label">Infrastructure Uptime</div>
+            <div class="metric-trend trend-up">↑ PostgreSQL/Redis</div>
           </div>
 
           <div class="metric-card">
             <div class="metric-icon">🌐</div>
-            <div class="metric-value" id="peers">Loading...</div>
-            <div class="metric-label">Network Peers</div>
-            <div class="metric-trend trend-up">↑ Healthy mesh</div>
+            <div class="metric-value">888</div>
+            <div class="metric-label">Chain ID</div>
+            <div class="metric-trend trend-stable">axionax-testnet-1</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">�</div>
+            <div class="metric-value">12%</div>
+            <div class="metric-label">RAM Usage</div>
+            <div class="metric-trend trend-stable">7.8GB available</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">📊</div>
+            <div class="metric-value">Grafana</div>
+            <div class="metric-label">Monitoring Active</div>
+            <div class="metric-trend trend-up">✅ v12.2.1</div>
           </div>
         </div>
 
         <!-- Network Health Indicators -->
         <div class="health-indicators">
-          <div class="health-item" data-health="consensus">
-            <div class="health-label">⚡ Consensus</div>
+          <div class="health-item" data-health="infrastructure">
+            <div class="health-label">🏗️ Infrastructure</div>
             <div class="health-bar">
               <div class="health-fill" style="width: 100%; background: #10b981;"></div>
             </div>
