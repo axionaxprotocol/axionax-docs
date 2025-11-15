@@ -1,7 +1,7 @@
 # สถานะโครงการ axionax Core | Project Status
 
 > **อัปเดตล่าสุด | Last Updated**: 2025-11-15
-> **เวอร์ชัน | Version**: v1.7.0-testnet
+> **เวอร์ชัน | Version**: v1.8.0-testnet
 > **เฟสปัจจุบัน | Current Phase**: Phase 1 - Testnet Infrastructure Complete ✅
 
 ---
