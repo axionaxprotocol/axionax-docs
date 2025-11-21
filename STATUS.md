@@ -1,8 +1,8 @@
 # สถานะโครงการ axionax Core | Project Status
 
-> **อัปเดตล่าสุด | Last Updated**: 2025-10-26
-> **เวอร์ชัน | Version**: v1.6.0-dev
-> **เฟสปัจจุบัน | Current Phase**: Phase 4 - Integration Complete ✅
+> **อัปเดตล่าสุด | Last Updated**: 2025-11-15
+> **เวอร์ชัน | Version**: v1.8.0-testnet
+> **เฟสปัจจุบัน | Current Phase**: Phase 1 - Testnet Infrastructure Complete ✅
 
 ---
 
@@ -11,27 +11,85 @@
 ### ความคืบหน้าโดยรวม | Overall Progress
 
 ```
-Phase 1-4: v1.6 Full Integration (Q4'25)
+Phase 1: Testnet Infrastructure (Nov 2025)
 ███████████████████████████████ 100% Complete ✅
+
+Phase 2: Enhanced Services (In Progress)
+████████░░░░░░░░░░░░░░░░░░░░░░ 25% In Progress 🔄
 ```
 
 | หมวดหมู่ | สถานะ | ความคืบหน้า |
 |----------|-------|-------------|
-| **Architecture Design** | ✅ Complete | 100% |
-| **Rust Core Modules** | ✅ Complete | 100% |
-| **Python DeAI Layer** | ✅ Complete | 100% |
-| **TypeScript SDK** | ✅ Complete | 100% |
-| **Rust-Python Bridge** | ✅ Complete | 100% |
-| **Integration & Testing** | ✅ Complete | 100% |
-| **Network Layer** | ✅ Complete | 100% |
-| **Crypto Enhancements** | ✅ Complete | 100% |
-| **State Management** | ✅ Complete | 100% |
-| **RPC Server** | ✅ Complete | 100% |
-| **Node Integration** | ✅ Complete | 100% |
+| **Testnet Infrastructure** | ✅ Complete | 100% |
+| **VPS Deployment** | ✅ Complete | 100% |
+| **Website & UI** | ✅ Complete | 100% |
+| **Explorer API** | ✅ Complete | 100% |
+| **Faucet API** | ✅ Complete | 100% |
+| **Real-time Statistics** | ✅ Complete | 100% |
+| **Monitoring & Backups** | ✅ Complete | 100% |
+| **Mock RPC Server** | 🟡 Needs Rebuild | 50% |
+| **Enhanced RPC Methods** | 📋 Planned | 0% |
+| **Example Contracts** | 📋 Planned | 0% |
+| **Grafana Dashboards** | 📋 Planned | 0% |
+| **Validator Node** | 📋 Planned | 0% |
 
 ---
 
 ## ✅ งานที่เสร็จสมบูรณ์ | Completed Tasks
+
+### 🚀 Phase 1: Testnet Infrastructure (November 2025) ✅
+
+#### Infrastructure Deployment (100% Complete) ✅
+- ✅ **VPS Setup** (vmi2895217 @ 217.216.109.5)
+  - 8GB RAM (87% free), 4 vCPU, 72GB disk
+  - Uptime: 8+ days, Load average: <0.2
+  - Location: Europe (Contabo VPS)
+
+- ✅ **Core Services** (9/9 Operational)
+  - PostgreSQL (port 5432) - Database
+  - Redis (port 6379) - Caching
+  - Nginx/SSL (ports 80/443) - Reverse proxy
+  - Mock RPC (ports 8545/8546) - Blockchain API 🟡 *Needs rebuild*
+  - Grafana (port 3030) - Monitoring (needs restart)
+  - Prometheus (port 9090) - Metrics
+  - Website (port 3000) - Public interface
+  - Explorer API (port 3001) - Block explorer
+  - Faucet API (port 3002) - Token distribution
+
+- ✅ **Website Features**
+  - MetaMask integration with auto-configuration
+  - Chain ID 86137 (testnet), Token: AXX (18 decimals)
+  - Real-time statistics (block height, services, uptime)
+  - Live service health dashboard
+  - Mobile-responsive dark theme
+
+- ✅ **Real-time Statistics API** (`/api/stats`)
+  - Block number from RPC
+  - Service health monitoring (9/9)
+  - Infrastructure uptime tracking
+  - Auto-refresh every 5 seconds
+  - JSON response with timestamp
+
+- ✅ **Monitoring & Operations**
+  - Prometheus alert rules (ServiceDown, HighMemoryUsage, HighDiskUsage)
+  - Automated daily backups (PostgreSQL + Redis)
+  - 7-day retention with compression
+  - Docker restart policies (unless-stopped)
+
+- ✅ **Documentation**
+  - TESTNET_DEPLOYMENT_PLAN.md (415 lines, 4-phase roadmap)
+  - Deployment guides for all services
+  - VPS setup and configuration docs
+  - MetaMask integration guide
+
+#### Current Status (November 15, 2025)
+- **Services Up**: 8/9 (Mock RPC needs rebuild with proper Node.js implementation)
+- **Website**: Live at http://217.216.109.5:3000
+- **Explorer API**: Working with `/health`, `/api/stats`, `/api/blocks/latest`
+- **Faucet API**: Working with `/health`, `/api/info`, `/api/request`
+- **Next Priority**: Rebuild Mock RPC with full Ethereum JSON-RPC 2.0 support
+
+---
 
 ### 🔗 Node Integration (October 26, 2025) ✅
 

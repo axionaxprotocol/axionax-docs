@@ -1,7 +1,7 @@
 # axionax Core - Build and Development Guide
 
-> **Version**: v1.6+ (Rust + Python + TypeScript)  
-> **Last Updated**: November 2025
+> **Version**: v1.8.0+ (Rust + Python + TypeScript)  
+> **Last Updated**: November 15, 2025
 
 ## Prerequisites
 
